@@ -12,8 +12,47 @@ def conectar():
 
     word = entrada_consulta.get()
 
-    if(word == "redshirts"):
+    if word == "redshirts":
         consulta = "SELECT * FROM redshirts_per_camera;"
+    elif word == "persons":
+        consulta = "SELECT * FROM persons_per_camera;"
+    elif word == "backpacks":
+        consulta = "SELECT * FROM backpacks_per_camera;"
+    elif word == "cars":
+        consulta = "SELECT * FROM cars_per_camera;"
+    elif word == "bicycles":
+        consulta = "SELECT * FROM bicycles_per_camera;"
+    elif word == "dogs":
+        consulta = "SELECT * FROM dogs_per_camera;"
+    elif word == "cats":
+        consulta = "SELECT * FROM cats_per_camera;"
+    elif word == "blueshirts":
+        consulta = "SELECT * FROM blueshirts_per_camera;"
+    elif word == "blackshirts":
+        consulta = "SELECT * FROM blackshirts_per_camera;"
+    elif word == "redcars":
+        consulta = "SELECT * FROM redcars_per_camera;"
+    elif word == "bluecars":
+        consulta = "SELECT * FROM bluecars_per_camera;"
+    elif word == "altos":
+        consulta = "SELECT * FROM altos_per_camera;"
+    elif word == "pequenos":
+        consulta = "SELECT * FROM pequenos_per_camera;"
+    elif word == "blueshoes":
+        consulta = "SELECT * FROM blueshoes_per_camera;"
+    elif word == "redshoes":
+        consulta = "SELECT * FROM redshoes_per_camera;"
+    elif word == "blackshoes":
+        consulta = "SELECT * FROM blackshoes_per_camera;"
+    elif word == "bluepants":
+        consulta = "SELECT * FROM bluepants_per_camera;"
+    elif word == "redpants":
+        consulta = "SELECT * FROM redpants_per_camera;"
+    elif word == "blackpants":
+        consulta = "SELECT * FROM blackpants_per_camera;"
+    else:
+        consulta = "SELECT 'Atributo no encontrado';"
+
 
 
     commands = f"""
